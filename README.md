@@ -20,7 +20,7 @@ Before running the application, you must ensure that you have Docker installed o
 Clone the repository from GitHub using the following command:
 
 ```
-git clone https://github.com/noamgivaty/stockexchange.git
+https://github.com/NoamGivaty/StockExchange.git
 ```
 
 ### Step 2: Open the Project
