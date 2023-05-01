@@ -54,4 +54,7 @@ You can access the frontend client by opening the following URL in your web brow
 http://localhost:8080/login.html
 ```
 
+### Step 5: Important methods
 
+1. Admin Controller: /admin/loadSharesAndTraders - load data from Json file (Shares and Traders)
+2. Admin Controller: /admin/startAutoUpdate - start auto update for the shares price ("connecting" to the market)
