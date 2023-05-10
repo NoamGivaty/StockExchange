@@ -1,12 +1,9 @@
 package com.StockExchange.controller;
 
 import com.StockExchange.Services.ActionService;
-import com.StockExchange.Services.ShareService;
 import com.StockExchange.model.Action;
-import com.StockExchange.model.Share;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -32,5 +29,4 @@ public class ActionController {
     @PostMapping("/deleteAction")
     public void deleteAction(@RequestParam Long id) {actionService.deleteAction(id);
     }
-
 }

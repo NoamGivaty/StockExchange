@@ -1,14 +1,10 @@
 package com.StockExchange.model;
 
-import com.StockExchange.model.Share;
-import com.StockExchange.model.Trader;
-
 import java.util.List;
 
 public class JsonData {
     private List<Share> shares;
     private List<Trader> traders;
-
     public List<Share> getShares() {
         return shares;
     }

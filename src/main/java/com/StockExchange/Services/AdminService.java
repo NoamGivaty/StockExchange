@@ -59,9 +59,9 @@ public class AdminService {
         for(Share share : shares){
             currentPrice = share.getCurrentPrice();
             if(share.getId()==15 || share.getId()==16 || share.getId()==10 || share.getId()==14)
-                change = randomFloat();
+                change = randomFloat(); //If the share is private / not real
             else
-                change = stockPrice.getStockChange(share.getName());
+                change = stockPrice.getStockChange(share.getName()); //Getting stock price change in %
             newPrice = currentPrice * ((100 + change)/100);
             shareService.updateShare(share.getId(),newPrice,share.getAmount());
             System.out.println(share.getName() + " last price is: " + currentPrice + " new price is: " + newPrice + " change: " + change);
