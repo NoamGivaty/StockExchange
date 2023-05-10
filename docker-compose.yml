@@ -10,9 +10,3 @@ services:
       - dbdata:/var/lib/postgresql/data
     networks:
       - db_network
-
-networks:
-  db_network:
-
-volumes:
-  dbdata:
